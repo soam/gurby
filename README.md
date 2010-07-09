@@ -11,12 +11,16 @@ the main content (what widgets are there).
           proportion 1
           grow :expand
         end
+        id 'my button' do
+          proportion 0
+          align :right
+        end
       end
 
       frame :title => 'My App' do
         vertical do
-          text :id => 'my text, :style => :multiline
-          button :label => 'a button'
+          text :id => 'my text', :style => :multiline
+          button :id => 'my button', :label => 'a button'
         end
       end
     end 
